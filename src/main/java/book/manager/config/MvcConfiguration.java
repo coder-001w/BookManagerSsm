@@ -19,7 +19,7 @@ import org.thymeleaf.templateresolver.ITemplateResolver;
 @EnableWebMvc
 public class MvcConfiguration implements WebMvcConfigurer {
 
-    //我们需要使用ThymeleafViewResolver作为视图解析器，并解析我们的HTML页面
+    //我们需要使用ThymeleafViewResolver作为视图解析器，并解析我们的HTML页面。
     @Bean
     public ThymeleafViewResolver thymeleafViewResolver(@Autowired SpringTemplateEngine springTemplateEngine){
         ThymeleafViewResolver resolver = new ThymeleafViewResolver();
