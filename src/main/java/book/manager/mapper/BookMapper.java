@@ -42,4 +42,10 @@ public interface BookMapper {
     })
     @Select("select * from borrow LEFT JOIN student on student.sid = borrow.sid LEFT JOIN book on book.bid = borrow.bid")
     List<BorrowDetails> borrowDetailslist();
+
+    @Select("select count(*) from book")
+    int getBookCount();
+
+    @Select("select count(*) from borrow")
+    int getBorrowCount();
 }

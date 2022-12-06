@@ -2,6 +2,7 @@ package book.manager.controller.page;
 
 import book.manager.service.AuthService;
 import book.manager.service.BookService;
+import book.manager.service.StatService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,11 +18,14 @@ public class AdminPageController {
     AuthService service;
     @Resource
     BookService bookservice;
+    @Resource
+    StatService statService;
 
     @RequestMapping("/index")
     public String index(HttpSession session, Model model){
         model.addAttribute("user",service.findUser(session));
         model.addAttribute("borrowList", bookservice.getBorrowDetails());
+        model.addAttribute("statinfo", statService.getGlobalStat());
         return "/admin/index";
     }
 
