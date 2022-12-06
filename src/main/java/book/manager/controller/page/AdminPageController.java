@@ -21,6 +21,7 @@ public class AdminPageController {
     @RequestMapping("/index")
     public String index(HttpSession session, Model model){
         model.addAttribute("user",service.findUser(session));
+        model.addAttribute("borrowList", bookservice.getBorrowDetails());
         return "/admin/index";
     }
 

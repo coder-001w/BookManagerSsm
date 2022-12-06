@@ -7,6 +7,7 @@
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/template/admin/book.html" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/template/admin" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/template/admin/index.html" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/template/admin" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/template/template.html" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/template" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/template/user/book.html" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/template/user" />
       </map>
     </option>
   </component>
